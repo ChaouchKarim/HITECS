@@ -1,0 +1,12 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_30(in comp13:Component_11,in comp3:Component_3,in comp12:Component_10){
+
+    comp12.operation51(3);
+    comp12.operation56(Component_10.operation47());
+    comp12.operation41CntMode(Component_10.OnOff.ON);
+    comp12.operation41CntRes(0.01);
+    comp12.operation41CntMode(Component_10.OnOff.OFF);
+
+}

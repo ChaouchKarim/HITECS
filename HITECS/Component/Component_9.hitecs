@@ -1,0 +1,34 @@
+namespace Component;
+component Component_9{
+
+    public enum Value5 {
+        LOAD,
+        V,
+        H,
+        Component_6
+    }
+
+    private value4:Value5;
+    public activity getInstance():Component_9[0..1]{
+            instance=Component_9.allInstances();
+            if(instance->isEmpty()){
+              instance=new Component_9();
+            }
+            return instance->first();
+    }
+
+    @Intialize
+    public  operation20(in value4:Value5){
+            this.value4=value4;
+    }
+
+    @Act
+    public  operation20(in value4:Value5){
+            this.value4=value4;
+    }
+
+    @Cleanup
+    public  operation20(in value4:Value5){
+            this.value4=value4;
+    }
+}

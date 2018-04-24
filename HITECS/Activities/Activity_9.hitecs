@@ -1,0 +1,12 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_9(in comp13:Component_11,in comp3:Component_3,in comp12:Component_10,in comp15:Component_13,in comp4:Component_4){
+
+    comp12.operation46(comp4.NCF());
+    comp15.operation73(20);
+    comp15.operation74(10);
+    comp15.operation75(Component_13.OnOff.ON);
+    comp15.operation40(Component_13.OnOff.ON);
+    comp15.operation23(comp4.F2());
+}

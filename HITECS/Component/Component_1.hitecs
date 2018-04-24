@@ -1,0 +1,52 @@
+namespace Component;
+
+component Component_1{
+  private operation24:Integer=0;
+  private value1:Component_3.operation12;
+  private value2:Component_3.operation12;
+
+
+  public activity getInstance():Component_1[0..1]{
+          instance=Component_1.allInstances();
+          if(instance->isEmpty()){
+            instance=new Component_1();
+          }
+
+          return instance->first();
+    }
+
+  @Initialize
+  public operation1(){
+          this.operation24=-1;
+  }
+
+  @Initialize
+  public operation24(in value3:Integer){
+          this.operation24=value3;
+  }
+
+  @Initialize
+  public operation79():Integer{
+          return this.operation24;
+  }
+
+  @Initialize
+  public operation3(in value25:Real){
+          txoperation12=Component_3::getInstance().operation12(value25);
+  }
+
+  public operation4(in value25:Real){
+          rxoperation12=Component_3::getInstance().operation12(value25);
+  }
+
+  @Act
+  public operation5() : Component_3.operation12 {
+          return this.rxoperation12;
+  }
+
+  @Act
+  public operation6() : Component_3.operation12 {
+          return this.txoperation12;
+  }
+
+}

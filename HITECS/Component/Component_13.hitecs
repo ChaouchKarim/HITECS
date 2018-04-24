@@ -1,0 +1,104 @@
+namespace Component;
+component Component_13{
+
+    public enum OnOff {
+        ON,
+        OFF
+    }
+    private comp15 : Component_13;
+    private comp16 : Component_13;
+    private  value25:Real;    // unit: GHz
+    private value7:Real; // unit: dBm
+    private value41:OnOff;
+    private value41:Real;
+    private value42:Real;
+    private  value43:OnOff;
+
+    public activity getInstance(in id:Integer):Component_13[0..1]{
+            comp15=Component_13.allInstances();
+            comp16=Component_13.allInstances();
+            if(id==1){
+
+              if(comp15->isEmpty()){
+                comp15=new Component_13();
+              }
+              return comp15->first();
+            }
+            if(id==2){
+              if(comp16->isEmpty()){
+                comp16=new Component_13();
+              }
+            return comp16->first();
+            }
+            return null;
+    }
+
+    @Initialize
+    public  operation2(){
+            value25=1;
+            value7=-1;
+            value41=OnOff.OFF;
+    }
+
+    @Initialize
+    public operation1(){
+            value25=1;
+            value7=-1;
+            value41=OnOff.OFF;
+    }
+    @Initialize
+    public  operation41(in value25:Real){
+            this.value25=value25;
+            }
+    @Initialize
+    public  operation23(in lv:Real){
+            this.value7=lv;
+    }
+
+    @Act
+    public operation69():Real{
+            return this.value25;
+    }
+
+    @Act
+    public  operation41(in value25:Real){
+            this.value25=value25;
+    }
+
+    @Act
+    public operation70():Real{
+            return this.value7;
+    }
+    @Act
+    public  operation40(in mode:OnOff){
+            this.value41=mode;
+    }
+    @Act
+    public  operation72():OnOff{
+            return this.value41;
+    }
+
+    @Act
+    public operation73(in value25:Real){
+            this.value41=value25;
+    }
+
+    @Act
+    public  operation74(in p:Real){
+            this.value42=p;
+    }
+    @Act
+    public  operation75(in mode:OnOff){
+            this.value43=mode;
+    }
+
+    @Cleanup
+    public  operation23(in lv:Real){
+            this.value7=lv;
+    }
+
+    @Cleanup
+    public  operation40(in mode:OnOff){
+            this.value41=mode;
+    }
+}

@@ -1,0 +1,12 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_19(in comp13:Component_11,in comp3:Component_3,in comp12:Component_10,in comp5:Component_5,in comp4:Component_4,in comp19:Component_16,in comp2:Component_2){
+
+    comp12.operation44(comp4.F1());
+    comp12.operation46(comp3.operation14());
+    comp12.operation49(10);
+    comp12.operation54(10);
+    comp12.operation56(comp2.operation7());
+    comp5.operation20(comp19.operation78(comp3.operation15()));
+}

@@ -1,0 +1,49 @@
+namespace Component;
+component Component_7{
+    private comp7:Component_7;
+    private comp8:Component_7;
+    private value25:Real;
+
+    public activity getInstance(in id:Integer):Component_7[0..1]{
+            comp7=Component_7.allInstances();
+            comp8=Component_7.allInstances();
+            if(id==1){
+
+              if(comp7->isEmpty()){
+                comp7=new Component_7();
+              }
+              return comp7->first();
+            }
+
+            if(id==2){
+              if(comp8->isEmpty()){
+                comp7=new Component_7();
+              }
+              return comp8->first();
+            }
+
+            return null;
+    }
+
+    @Intialize
+    public operation2(){
+            value25=0;
+    }
+
+    @Intialize
+    public  operation1(){
+            value25=0;
+    }
+
+    @Intialize
+    public  operation41(in value25:Real){
+            this.value25=value25;
+    }
+
+    @Act
+    public  operation41(in value25:Real){
+            this.value25=value25;
+    }
+
+
+}

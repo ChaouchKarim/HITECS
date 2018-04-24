@@ -1,0 +1,14 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_10(in comp13:Component_11,in comp3:Component_3,in comp6:Component_6){
+
+    comp6.operation25(Component_6.PowerMeasType.RX);
+    comp6.operation31(1);
+    comp6.operation32(Component_6.OnOff.ON);
+    comp6.operation39(1);
+    comp6.operation36(Component_6.OnOff.ON);
+    comp6.setAutoScaling(Component_6.ScalingMode.ONCE);
+    comp6.operation40(Component_6.OnOff.ON);
+    comp6.operation40(Component_6.OnOff.OFF);
+}

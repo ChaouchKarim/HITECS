@@ -1,0 +1,15 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_28(in comp13:Component_11,in comp3:Component_3,in comp15:Component_13,in comp12:Component_10,in comp6:Component_6,in comp11:Component_9,in comp4:Component_4){
+
+    comp12.setoperation7(comp4.RefLvModified());
+    comp12.operation46(comp4.f1Modified());
+    comp12.operation49(20);
+    comp12.operation51(Component_10.value29_AUTO);
+    comp12.operation46(comp4.f2Modified());
+    comp12.operation46(comp4.im1());
+    comp12.operation46(comp4.im2());
+    comp15.operation40(Component_13.OnOff.OFF);
+    comp6.operation40(Component_6.OnOff.OFF);
+}

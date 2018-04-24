@@ -1,0 +1,179 @@
+namespace Component;
+component Component_6{
+
+    public enum OnOff {
+        ON,
+        OFF
+    }
+
+    public enum ChannelMode {
+        SCALAR
+    }
+
+    public enum PowerMeasType {
+        RX,
+        TX,
+        GDEL
+    }
+
+    public enum ScalingMode {
+        ONCE
+    }
+
+    private value6:Real;
+    private value7:Real;
+    private value41:OnOff;
+    private value8:ChannelMode;
+    private value9:PowerMeasType;
+    private value10:Integer;
+    private value11:Integer;
+    private value12:Real;
+    private value13:Real;
+    private value14:Real;
+    private value15:Integer;
+    private value16:OnOff;
+    private value17:Integer;
+    private value18:Integer;
+    private numberoperation79s:Integer;
+    private value21:OnOff;
+    private value22:OnOff;
+    private conversionFreq:Real;
+    private value23:Integer;
+    private value24:ScalingMode;
+    private comp6:Component_6;
+
+
+    public activity getInstance(in id:Integer):Component_6[0..1]{
+            comp6=Component_6.allInstances();
+
+            if(id==1){
+
+              if(comp6->isEmpty()){
+                comp6=new Component_6();
+              }
+            return comp6->first();
+            }
+            return null;
+    }
+
+    @Initialize
+    public  operation21(in mode:ChannelMode){
+            this.value8=mode;
+    }
+
+    @Initialize
+    public  operation22(in value25:Real){
+            this.value6=value25;
+    }
+    @Initialize
+    public  operation23(in lv:Real){
+            this.value7=lv;
+    }
+
+
+    @Act
+    public operation2(){
+            value6=1;
+            value7=-1;
+            value41=OnOff.OFF;
+    }
+
+    @Act
+    public  operation1(){
+            value6=1;
+            value7=-1;
+            value41=OnOff.OFF;
+    }
+
+    @Act
+    public operation25(in type:PowerMeasType){
+            this.value9=type;
+    }
+
+
+    @Act
+    public operation26(in value:Integer){
+            this.value10=value;
+    }
+
+    @Act
+    public  operation27(in value:Integer){
+            this.value11=value;
+    }
+
+    @Act
+    public  operation28(in value25:Real){
+            this.value12=value25;
+    }
+
+    @Act
+    public  operation29(in value25:Real){
+            this.value13=value25;
+    }
+
+    @Act
+    public  operation30(in lv:Real){
+            this.value14=lv;
+    }
+
+    @Act
+    public  operation31(in value:Integer){
+            this.value15=value;
+    }
+
+    @Act
+    public  operation32(in mode:OnOff){
+            this.value16=mode;
+    }
+
+    @Act
+    public  operation33(in value:Integer){
+            this.value17=value;
+    }
+
+    @Act
+    public  operation34(in value:Integer){
+            this.value18=value;
+    }
+
+    @Act
+    public  operation35(in value:Integer){
+            this.operation35=value;
+    }
+
+    @Act
+    public  operation36(in mode:OnOff){
+            this.value21=mode;
+    }
+
+    @Act
+    public operation37(in mode:OnOff){
+            this.value22=mode;
+    }
+
+    @Act
+    public operation38(in value25:Real){
+            this.conversionFreq=value25;
+    }
+
+    @Act
+    public operation39(in value:Integer){
+            this.value23=value;
+    }
+
+    @Act
+    public setAutoScaling(in mode:ScalingMode){
+            this.value24=mode;
+    }
+
+    @Cleanup
+    public  operation23(in lv:Real){
+            this.value7=lv;
+    }
+
+    @Cleanup
+    public operation40(in mode:OnOff){
+            this.value41=mode;
+    }
+
+}

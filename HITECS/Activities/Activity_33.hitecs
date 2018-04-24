@@ -1,0 +1,17 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_32(in comp13:Component_11,in comp3:Component_3,in comp15:Component_13,in comp12:Component_10,in comp4:Component_4,in comp2:Component_2){
+
+    comp6.operation40(Component_6.OnOff.ON);
+    for(i in 0..10){
+      comp15.operation23(comp4.F3());
+    }
+
+    comp12.operation56(comp2.operation7());
+    comp12.operation44(comp2.operation7Modified());
+    
+    if (comp12.value25CntMode == comp12.ONOff.OFF) {
+      comp12.operation46(Component_10.operation57());
+    }
+}

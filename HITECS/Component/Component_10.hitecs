@@ -1,0 +1,172 @@
+namespace Component;
+component Component_10{
+
+    public enum operation57Func {
+        INIT,
+        NOIS_MEAS
+    }
+
+    public enum OnOff {
+        ON,
+        OFF
+    }
+
+    public enum PowerMeas {
+        INIT,
+        SHORT
+    }
+    private  value29_AUTO : Real;
+    public   value26 : Integer;
+    private  value27:Real;
+    private  centFreq:Real;
+    private  value28:Real;
+    private  value29:Real;
+    private  value30:Real;
+    private  value31:Real;
+    private  value25CntMode:OnOff;
+    private  value25CntRes:Real;
+    private  demodoperation12width:Real;
+    private  noisMeasMode:OnOff;
+    private  value34:Integer;
+    private  value35:Real;
+    private  value36:Real;
+
+
+    public activity getInstance():Component_10[0..1]{
+            instance=Component_10.allInstances();
+            if(instance->isEmpty()){
+              instance=new Component_10();
+            }
+
+            return instance->first();
+    }
+
+    @Intialize
+    public  operation2(){
+            this.value27=0;
+            this.centFreq=0;
+            this.value28=0;
+            this.value29=0;
+            this.value30=0;
+            this.value31=0;
+            this.value25CntMode=OnOff.OFF;
+            this.value25CntRes=0;
+    }
+
+    @Intialize
+    public  operation1(){
+            this.value27=0;
+            this.centFreq=0;
+            this.value28=0;
+            this.value29=0;
+            this.value30=0;
+            this.value31=0;
+            this.value25CntMode=OnOff.OFF;
+            this.value25CntRes=0;
+    }
+
+    @Act
+    public  operation1(){
+            this.value27=0;
+            this.centFreq=0;
+            this.value28=0;
+            this.value29=0;
+            this.value30=0;
+            this.value31=0;
+            this.value25CntMode=OnOff.OFF;
+            this.value25CntRes=0;
+    }
+    @Act
+    public  operation44(in lv:Real){
+              this.value27=lv;
+    }
+
+    @Act
+    public  operation45():Real{
+            return this.value27;
+    }
+    @Act
+    public  operation46(in value25:Real){
+            this.centFreq=value25;
+    }
+    @Act
+    public  operation47():Real{
+            return this.centFreq;
+    }
+    @Act
+    public  setDemodoperation12width(in bandwidth:Real){
+            this.demodoperation12width=bandwidth;
+    }
+
+    @Act
+    public  operation50(in value25:Real){
+            this.value36=value25;
+    }
+
+    @Act
+    public  operation49(in span:Real){
+            this.value28=span;
+    }
+    @Act
+    public  operation52():Real{
+            return this.value28;
+    }
+
+    @Act
+    public  operation51(in rbw:Real){
+            this.value29=rbw;
+    }
+    @Act
+    public operation53():Real{
+            return this.value29;
+    }
+
+    @Act
+    public operation54(in vbw:Real){
+            this.value30=vbw;
+    }
+
+    @Act
+    public  operation55():Real{
+            return this.value30;
+    }
+    @Act
+    public  operation56(in value31:Real){
+            this.value31=value31;
+    }
+    @Act
+    public operation57():Real{
+            return this.value31;
+    }
+    @Act
+    public  operation41CntMode(in mode:OnOff){
+            this.value25CntMode=mode;
+    }
+    @Act
+
+    public  operation58():OnOff{
+            return this.value25CntMode;
+    }
+
+    @Act
+    public operation41CntRes(in res:Real){
+            this.value25CntRes=res;
+    }
+    @Act
+    public  operation60():Real{
+            return this.value25CntRes;
+    }
+
+    @Act
+    public  operation61(in mode:OnOff){
+            this.noisMeasMode=mode;
+    }
+    @Act
+    public  operation62(in value:Integer){
+            this.value34=value;
+    }
+    @Act
+    public  setoperation7(in peak:Real){
+            this.value35=peak;
+    }
+}

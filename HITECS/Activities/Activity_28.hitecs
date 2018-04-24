@@ -1,0 +1,24 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_27(in comp13:Component_11,in comp3:Component_3,in comp15:Component_13,in comp12:Component_10,in comp6:Component_6,in comp11:Component_9,in comp4:Component_4,in comp2:Component_2){
+
+    comp12.operation1();
+    comp12.operation46(comp4.NCF());
+    comp12.operation49(10);
+    comp12.operation51(Component_10.value29_AUTO);
+    comp12.operation54(10);
+    comp12.operation62(10);
+    comp12.operation44(comp2.operation9Modified());
+    comp11.operation20(Component_9.Value5.Component_6);
+    comp15.operation41(comp4.f1());
+    comp6.operation22(comp4.f2());
+    comp12.operation56(comp4.im1());
+    comp12.operation56(0);
+    comp15.operation23(comp4.PsIM3());
+    comp15.operation40(Component_13.OnOff.ON);
+    comp15.operation40(Component_13.OnOff.OFF);
+    comp6.operation23(comp4.PsIM3());
+    comp6.operation40(Component_6.OnOff.ON);
+    comp15.operation40(Component_13.OnOff.ON);
+}

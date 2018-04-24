@@ -1,0 +1,79 @@
+namespace TestCases;
+private import Activities::*;
+private import Component::*;
+testcase TC5{
+
+    private  comp1:Component_1[0..1];
+    private  comp18:Component_15[0..1];
+    private  comp11:Component_9[0..1];
+    private  comp5:Component_5[0..1];
+    private  comp15:Component_13[0..1];
+    private  comp16:Component_13[0..1];
+    private  comp12:Component_10[0..1];
+    private  comp7:Component_7[0..1];
+    private  comp8:Component_7[0..1];
+    private  comp6:Component_6[0..1];
+    private  comp17:Component_14[0..1];
+    private  comp14:Component_12[0..1];
+    private  comp9:Component_8[0..1];
+    private  comp10:Component_8[0..1];
+
+    private  comp4:Component_4;
+    private  comp2:Component_2[0..1];
+    private  comp19:Component_16[0..1];
+
+    private  name:String;
+    private  comp13:Component_11;
+    private  comp3:Component_3;
+
+    @Create
+    public BOLFCAMeasurement(in comp13:Component_11,in comp3:Component_3){
+            comp1=Component_1.getInstance();
+            comp18=Component_15.getInstance();
+            comp11=Component_9.getInstance();
+            comp5=Component_5.getInstance();
+            comp15=Component_13.getInstance(1);
+            comp16=Component_13.getInstance(2);
+            comp12=Component_10.getInstance();
+            comp7=Component_7.getInstance(1);
+            comp8=Component_7.getInstance(2);
+            comp6=Component_6.getInstance(1);
+            comp17=Component_14.getInstance();
+            comp14=Component_12.getInstance();
+            comp9=Component_8.getInstance(Component_8.Type.TX);
+            comp10=Component_8.getInstance(Component_8.Type.RX);
+            comp4=new Component_4();
+            comp2=Component_2.getInstance();
+            comp19=Component_16.getInstance();
+            this.comp13=comp13;
+            this.comp3=comp3;
+    }
+
+    @Setup
+    public setup(){
+            Activity_13(comp13,comp3,comp1,comp9,comp10,comp18,comp11,comp5,comp15,comp12,comp7,comp8,comp10,comp19);
+    }
+    @Main
+    public mesure(){
+
+            Activity_19(comp13,comp3,comp12,comp5,comp4,comp19,comp2);
+            Activity_31(comp13,comp3,comp15,comp12,comp4,comp2);
+            Activity_30(comp13,comp3,comp12);
+            Activity_7(comp13,comp3,comp12,comp16,comp8,comp11,comp4,comp19);
+            Activity_21(comp13,comp3,comp12,comp16,comp4,comp2);
+            Activity_9(comp13,comp3,comp12,comp15,comp4);
+            Activity_33(comp13,comp3);
+            Activity_23(comp13,comp3,comp15,comp4);
+            Activity_34(comp13,comp3);
+            Activity_24(comp13,comp3,comp15,comp4);
+            Activity_16(comp13,comp3,comp15);
+            Activity_26(comp13,comp3,comp15,comp12,comp4,comp2);
+    }
+
+    @Teardown
+    public teardown(){
+            Activity_1(comp13,comp3,comp15,comp16,comp5,comp18,comp11);
+    }
+
+
+}

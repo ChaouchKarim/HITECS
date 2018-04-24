@@ -1,0 +1,33 @@
+namespace Component;
+component Component_12{
+
+
+    public enum value40 {
+        LINEAR,
+        LIMITER
+    }
+
+    private  value38:value40;
+    private comp13operation64:Integer;
+
+    public activity getInstance():Component_12[0..1]{
+            instance=Component_12.allInstances();
+            if(instance->isEmpty()){
+              instance=new Component_12();
+            }
+            return instance->first();
+    }
+    @Act
+    public  setSatoperation64(in value3:Integer){
+            this.comp13operation64=value3;
+    }
+    @Act
+    public  operation66(in mode:value40){
+            this.value38=mode;
+    }
+
+    @Cleanup
+    public  operation66(in mode:value40){
+            this.value38=mode;
+    }
+}

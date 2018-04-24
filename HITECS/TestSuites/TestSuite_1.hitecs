@@ -1,0 +1,39 @@
+
+namespace TestSuites;
+private import Activities::*;
+private import Component::*;
+private import TestCases::*;
+
+
+testsuite TestSuite_1{
+
+@Create
+public testSuite_1(){
+         baseoperation14 = 11719.5;
+         for(i in 0..20){
+            baseoperation14+=39.0;
+            comp13=new Component_11(1,"Component_10T1");
+            comp31=new Component_3(baseoperation14+2000,baseoperation14,Component_3.Pol.V,Component_3.Pol.H,i+1);
+            comp32=new Component_3(baseoperation14+2019.5,baseoperation14+19.5,Component_3.Pol.V,Component_3.Pol.H,i+2);
+
+            if(i<1){
+                add(new TC2(comp13,comp31));
+                add(new TC2(comp13,comp32));
+            }
+            add(new TC1(comp13,comp31));
+            add(new TC3(comp13,comp31));
+            add(new TC4(comp13,comp31));
+            add(new TC5(comp13,comp31));
+            add(new TC6(comp13,comp31));
+            add(new TC7(comp13,comp31));
+
+            add(new TC1(comp13,comp32));
+            add(new TC3(comp13,comp32));
+            add(new TC4(comp13,comp32));
+            add(new TC5(comp13,comp32));
+            add(new TC6(comp13,comp32));
+            add(new TC7(comp13,comp32));
+
+            }
+        }
+  }

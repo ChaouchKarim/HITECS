@@ -1,0 +1,28 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_11(in comp13:Component_11,in comp3:Component_3,in comp6:Component_6, in comp11:Component_9,in comp19:Component_16,in comp4:Component_4){
+
+      comp6.operation2();
+      comp6.operation1();
+      comp6.operation25(Component_6.PowerMeasType.GDEL);
+      comp6.operation26(1);
+      comp6.operation27(1);
+      comp6.operation21(Component_6.ChannelMode.SCALAR);
+      comp6.operation25(Component_6.PowerMeasType.GDEL);
+      comp6.operation28(comp4.SourceStartFreq());
+      comp6.operation29(comp4.SourceStopFreq());
+      comp6.operation30(comp4.Step64());
+      comp6.operation31(1);
+      comp6.operation32(Component_6.OnOff.ON);
+      comp6.operation33(1);
+      comp6.operation34(10);
+      comp6.operation35(6);
+      comp6.operation36(Component_6.OnOff.ON);
+      comp6.operation37(Component_6.OnOff.ON);
+      comp6.operation38(comp4.ConversionFreq());
+      comp11.operation20(Component_16.convertToComponent_9Value5(comp3.operation16()));
+      comp6.operation40(Component_6.OnOff.ON);
+      comp6.operation40(Component_6.OnOff.OFF);
+
+}

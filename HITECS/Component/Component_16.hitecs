@@ -1,0 +1,57 @@
+namespace Component;
+
+class Component_16 {
+
+    @Create
+    private Component_16() {
+    }
+
+    public activity getInstance() :Component_16[0..1]
+
+    {
+        instance = Component_16.allInstances();
+        if (instance -> isEmpty()) {
+            instance = new Component_16();
+        }
+
+        return instance -> first();
+    }
+
+
+    public operation78(in pol :Component_3.Pol) :Component_5.Value5
+
+    {
+        if (pol == Component_3.Pol.H) {
+            return Component_5.Value5.H;
+        }
+        return Component_5.Value5.V;
+    }
+
+    public convertToComponent_15Value5(in pol :Component_3.Pol) :Component_15.Value5
+
+    {
+        if (pol == Component_3.Pol.H) {
+            return Component_15.Value5.H;
+        }
+        return Component_15.Value5.V;
+    }
+
+    public convertToComponent_9Value5(in pol :Component_3.Pol) :Component_9.Value5
+
+    {
+        if (pol == Component_3.Pol.H) {
+            return Component_9.Value5.H;
+        }
+        return Component_9.Value5.V;
+    }
+
+    public convertToComponent_8Value5(in pol :Component_3.Pol) :Component_8.Value5
+
+    {
+        if (pol == Component_3.Pol.H) {
+            return Component_8.Value5.H;
+        }
+        return Component_8.Value5.V;
+
+    }
+}

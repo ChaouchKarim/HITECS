@@ -1,0 +1,17 @@
+namespace Component;
+component Component_11{
+
+    private name:String;
+    private value3:Integer;
+    @Create
+    public Component_11(in value3:Integer,in name:String){
+            this.value3=value3;
+            this.name=name;
+    }
+
+    @Act
+    public  operation64():Integer{
+            return this.value3;
+    }
+
+}

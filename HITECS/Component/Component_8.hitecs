@@ -1,0 +1,59 @@
+namespace Component;
+component Component_8{
+
+    private comp9:Component_8;
+    private comp10:Component_8;
+    private  value4:Value5;
+    private  state:State;
+
+    public enum Type {
+        TX,
+        RX
+    }
+
+    public enum State {
+        RESET,
+        ZERO
+    }
+
+    public enum Value5 {
+        LOAD,
+        V,
+        H
+    }
+    public activity getInstance(in type :Type) :Component_8[0..1]{
+        comp9=Component_8.allInstances();
+        comp10=Component_8.allInstances();
+        if(type==Type.TX){
+
+            if(comp9->isEmpty()){
+              comp9=new Component_8();
+            }
+            return comp9->first();
+            }
+            if(type==Type.RX){
+              if(comp10->isEmpty()){
+              comp10=new Component_8();
+            }
+            return comp10->first();
+            }
+            return null;
+    }
+
+    @Initialize
+    public  operation2(){
+            this.state=State.RESET;
+    }
+
+    @Initialize
+    public  operation42(){
+            this.state=State.ZERO;
+    }
+
+    @Act
+    public operation43(in value4:Value5){
+            this.value4=value4;
+    }
+
+
+}

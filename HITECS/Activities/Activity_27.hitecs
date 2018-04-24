@@ -1,0 +1,14 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_26(in comp13:Component_11,in comp3:Component_3,in comp15:Component_13,in comp12:Component_10,in comp4:Component_4,in comp2:Component_2){
+
+    comp12.operation1();
+    comp12.operation46(comp4.NCF());
+    comp12.operation49(10);
+    comp12.operation51(Component_10.value29_AUTO);
+    comp12.operation54(10);
+    comp12.operation44(comp2.operation9());
+    comp15.operation23(comp4.PsFCA());
+    comp15.operation23(comp4.PsFCAModified());
+}

@@ -1,0 +1,43 @@
+namespace Component;
+
+class Component_2 {
+
+    @Create
+    private Component_2() {
+        }
+
+    public activity getInstance() :Component_2[0..1]
+
+        {
+            instance = Component_2.allInstances();
+            if (instance -> isEmpty()) {
+                instance = new Component_2();
+            }
+
+            return instance -> first();
+        }
+
+    private clearSkyoperation64 :Integer;
+
+    public operation7() :Real {
+            return Unknown;
+        }
+
+    public operation7Modified():Real{
+            return Unknown;
+        }
+
+    public operation9():Real{
+            return Unknown;
+        }
+
+    public operation9Modified():Real{
+            return Unknown;
+        }
+
+    public operation11():Integer{
+            return Unknown;
+        }
+
+
+}

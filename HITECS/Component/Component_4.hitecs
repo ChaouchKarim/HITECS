@@ -1,0 +1,111 @@
+namespace Component;
+class Component_4  {
+
+    public  F1() : Real {
+        return Unknown;
+    }
+
+    public  F2(): Real {
+        return Unknown;
+    }
+
+    public  F2Modified(): Real {
+        return Unknown;
+    }
+
+    public  F3() : Real{
+        return Unknown;
+    }
+
+    public  F4() : Real{
+        return Unknown;
+    }
+
+    public  NCF() : Real{
+        return Unknown;
+    }
+
+    public  NCFModified(): Real {
+        return Unknown;
+    }
+
+    public  Component_10CF() : Real{
+        return Unknown;
+    }
+
+    public  PowerLvPlusDelta() : Real{
+        return Unknown;
+    }
+
+    public  PowerLvMinusNDelta() : Real{
+        return Unknown;
+    }
+
+    public  PsLim() : Real{
+        return Unknown;
+    }
+
+    public  SLevel() : Real{
+        return Unknown;
+    }
+
+    public  PsFCA(): Real {
+        return Unknown;
+    }
+
+    public  PsFCAModified() : Real{
+        return Unknown;
+    }
+
+    public  SourceStartFreq() : Real{
+        return Unknown;
+    }
+
+    public SourceStopFreq(): Real {
+        return Unknown;
+    }
+
+    public Step64(): Real {
+        return Unknown;
+    }
+
+    public ConversionFreq(): Real {
+        return Unknown;
+    }
+
+    public f1() : Real{
+        return Unknown;
+    }
+
+    public  f1Modified() : Real{
+        return Unknown;
+    }
+
+    public  f2(): Real {
+        return Unknown;
+    }
+
+    public f2Modified(): Real {
+        return Unknown;
+    }
+
+    public im1() : Real{
+        return Unknown;
+    }
+
+    public im2(): Real {
+        return Unknown;
+    }
+
+    public  PsIM3() : Real{
+        return Unknown;
+    }
+
+    public  RefLvModified(): Real {
+        return Unknown;
+    }
+
+    public  value28(): Real {
+        return Unknown;
+    }
+}

@@ -1,0 +1,39 @@
+namespace Component;
+component Component_14{
+
+    public enum OnOff {
+        ON,
+        OFF
+    }
+
+    private  value44:OnOff;
+    private  value45:OnOff;
+
+    public activity getInstance():Component_14[0..1]{
+            instance=Component_14.allInstances();
+            if(instance->isEmpty()){
+              instance=new Component_14();
+            }
+            return instance->first();
+            }
+
+    @Initialize
+    public operation76(in mode:OnOff){
+            this.value44=mode;
+    }
+
+    @Initialize
+    public  operation77(in mode:OnOff){
+            this.value45=mode;
+    }
+
+    @Act
+    public operation76(in mode:OnOff){
+            this.value44=mode;
+
+    }
+    @Act
+    public  operation77(in mode:OnOff){
+            this.value45=mode;
+    }
+}

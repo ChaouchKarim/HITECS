@@ -1,0 +1,8 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_22(in comp13:Component_11,in comp3:Component_3,in comp15:Component_13,in comp4:Component_4){
+
+    comp15.operation23(comp4.PowerLvPlusDelta());
+    comp15.operation23(comp4.F2());
+}

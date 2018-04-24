@@ -1,0 +1,102 @@
+namespace Component;
+component Component_3{
+
+    public enum Pol {
+        H, V
+    }
+
+    public enum operation12 {
+        L, S, C, X, Ku, K, Ka
+    }
+
+    private operation13:Real;
+    private operation14:Real;
+    private operation15:Pol;
+    private operation16:Pol;
+    private id:Integer;
+    private test:operation12;
+
+
+    public activity getInstance():Component_3[0..1]{
+            instance=Component_3.allInstances();
+            if(instance->isEmpty()){
+              instance=new Component_3();
+    }
+
+            return instance->first();
+    }
+
+    @Create
+    private Component_3(in operation13:Real,in operation14:Real,in operation15:Pol,in operation16:Pol,in id:Integer){
+            this.operation13=operation13;
+            this.operation14=operation14;
+            this.operation15=operation15;
+            this.operation16=operation16;
+            this.id=id;
+    }
+
+    @Act
+    public operation12(in value25:Real):operation12{
+
+            if(value25>=1&&value25< 2){
+                return operation12.L;
+
+            }
+            else if(value25>=2&&value25< 4){
+                return operation12.S;
+
+            }
+            else if(value25>=4&&value25< 8){
+                return operation12.C;
+            }
+            else if(value25>=8&&value25< 12){
+                return operation12.X;
+            }
+            else if(value25>=12&&value25< 18){
+                return operation12.Ku;
+            }
+            else if(value25>=18&&value25< 26){
+                return operation12.K;
+            }
+            else if(value25>=26&&value25< 40){
+                return operation12.Ka;
+            }
+
+            else{
+                return operation12.L;
+            }
+    }
+
+    @Act
+    public operation13():Real{
+            return this.operation13;
+    }
+
+    public operation14():Real{
+            return this.operation14;
+    }
+    @Act
+
+    public  operation15():Pol{
+            return this.operation15;
+    }
+
+    @Act
+    public  operation16():Pol{
+            return this.operation16;
+    }
+
+    @Act
+    public operation17():Integer{
+            return this.id;
+    }
+
+    @Act
+    public operation6():operation12[0..*]{
+            return operation12(operation13());
+    }
+    @Act
+    public operation5():operation12[0..*]{
+            return operation12(operation14());
+    }
+}

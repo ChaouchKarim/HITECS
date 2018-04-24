@@ -1,0 +1,15 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_12(in comp13:Component_11,in comp3:Component_3,in comp12:Component_10,in comp16:Component_13,in comp5:Component_5,in comp1:Component_1,in comp2:Component_2){
+
+    comp12.operation49(30);
+    comp12.operation51(3);
+    comp12.operation54(10);
+    comp12.operation56(comp2.operation7());
+    comp12.operation61(Component_10.OnOff.ON);
+    comp15.operation40(Component_13.OnOff.OFF);
+    comp5.operation20(Component_5.Value5.LOAD);
+    comp1.operation24(comp2.operation11());
+    comp1.operation24(comp13.operation64());
+}

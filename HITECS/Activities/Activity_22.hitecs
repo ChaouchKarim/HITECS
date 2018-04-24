@@ -1,0 +1,19 @@
+namespace Activities;
+private import Component::*;
+
+activity Activity_21(in comp13:Component_11,in comp3:Component_3,in comp12:Component_10,in comp16:Component_13,in comp4:Component_4,in comp2:Component_2){
+
+    comp12.operation46(comp4.NCF());
+    comp12.setDemodoperation12width(25);
+    comp12.operation51(10);
+    comp12.operation49(1.0);
+    comp12.operation46(20);
+    comp12.operation44(10);
+    comp12.operation56(20);
+    comp12.operation49(25);
+    comp12.operation56(comp2.operation7());
+    comp12.operation46(comp4.Component_10CF());
+    comp12.operation56(comp2.operation7());
+    comp16.operation40(Component_13.OnOff.OFF);
+    comp16.operation23(-1);
+}
