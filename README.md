@@ -1,8 +1,12 @@
 # HITECS : A UML Profile and Analysis Framework for Hardware-in-the-Loop Testing of Cyber Physical Systems
 
-_**Seung Yeob Shin, Karim Chaouch, Shiva Nejati, Mehrdad Sabetzadeh, Lionel C. Briand**_                            _**Frank Zimmer**_
-_**SnT Centre, University of Luxembourg, Luxembourg**_                                                                                       _**SES Networks, Luxembourg**_
-_**{shin,chaouch,nejati,sabetzadeh,briand}@svv.lu**_                                                                                               _**frank.zimmer@ses.com**_
+_**Seung Yeob Shin, Karim Chaouch, Shiva Nejati, Mehrdad Sabetzadeh, Lionel C. Briand**_                          
+_**SnT Centre, University of Luxembourg, Luxembourg**_                                                                                       
+_**{shin,chaouch,nejati,sabetzadeh,briand}@svv.lu**_                                                                      
+
+_**Frank Zimmer**_
+_**SES Networks, Luxembourg**_
+_**frank.zimmer@ses.com**_
 
 
 
