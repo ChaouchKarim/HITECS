@@ -2,9 +2,7 @@
 
 _**Seung Yeob Shin, Karim Chaouch, Shiva Nejati, Mehrdad Sabetzadeh, Lionel C. Briand, and Frank Zimmer**_
 
-## Abstract
 
-Hardware-in-the-loop (HiL) testing is an important step in the development of cyber physical systems (CPS). This paper proposes a framework to help engineers systematically specify CPS HiL test cases and analyze HiL testing risks. Leveraging the UML profile mechanism, we develop an executable domain-specific language, HITECS, for HiL test case specification. HITECS builds on the UML Testing Profile (UTP) and the UML action language (Alf). Using HITECS, we provide analysis methods to ensure that HiL test cases are well-behaved, and to estimate the execution time of these test cases before the actual HiL testing phase. We apply HITECS to an industrial case study from the satellite domain. Our results show that HITECS helps engineers define more complete and effective well-behavedness assertions for HiL test cases, compared to when these assertions are defined without systematic guidance; HITECS verifies in practical time that HiL test cases are well-behaved; and HITECS accurately estimates HiL test case execution times.
 
 ## Project artifacts
 
