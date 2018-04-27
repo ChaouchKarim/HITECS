@@ -18,7 +18,7 @@
 
 ### Experiment results
 * ./experiments
-  The results of the RQ1 and RQ2 experiments
+  The results of the model checking and simulation experiments
 
 
 
