@@ -6,6 +6,6 @@ scheduler Scheduler_1{
    suite=new TestSuite_1();
         for(tc in suite)
         {
-            tc.exec();
+            tc.run();
         }
   }
