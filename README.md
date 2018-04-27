@@ -4,9 +4,7 @@ _**Seung Yeob Shin, Karim Chaouch, Shiva Nejati, Mehrdad Sabetzadeh, Lionel C. B
 _**SnT Centre, University of Luxembourg, Luxembourg**_                                                                                       
 _**{shin,chaouch,nejati,sabetzadeh,briand}@svv.lu**_                                                                      
 
-_**Frank Zimmer**_
-_**SES Networks, Luxembourg**_
-_**frank.zimmer@ses.com**_
+_**Frank Zimmer**__**SES Networks, Luxembourg**__**frank.zimmer@ses.com**_
 
 
 
